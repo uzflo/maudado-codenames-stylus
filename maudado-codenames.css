@@ -8,7 +8,7 @@
 
 @-moz-document domain("codenames.game") {
 	:root {
-		--maudado-bg-img-height: 2813px;
+		--maudado-bg-img-height: 6319px;
 		--maudado-bg-img-width: 5000px;
 	}
 
@@ -17,10 +17,10 @@
 		height: 100%;
 		width: 100%;
 
-		background-image: url(https://i.imgur.com/JMu0VsP.jpeg);
+		background-image: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/page_background/Desktop%20-%20Extended_tiled.png?raw=true);
 		background-attachment: fixed;
 		background-repeat: repeat;
-		animation: diagonalScroll 60s infinite;
+		animation: diagonalScroll 135s infinite;
 		animation-direction: alternate;
 		animation-timing-function: linear;
 		background-size: 350% !important;
@@ -50,28 +50,36 @@
 	
 	/* Card Backgrounds */
 	img[src$="back-gold.png"] {
-		content: url(https://i.imgur.com/Uxmr9S6.png);
+		content: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/card_backgrounds/back-gold-Maudado.png?raw=true);
 	}
 	
 	img[src$="back-white.png"] {
-		content: url(https://i.imgur.com/CHFz6UV.png);
+		content: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/card_backgrounds/back-white-Maudado.png?raw=true);
 	}
 	
 	img[src$="back-black.png"] {
-		content: url(https://i.imgur.com/640Ynkc.png);
+		content: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/card_backgrounds/back-black-Maudado.png?raw=true);
 	}
 	
 	img[src$="back-blue.png"] {
-		content: url(https://i.imgur.com/NapW7mG.png);
+		content: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/card_backgrounds/back-blue-Maudado.png?raw=true);
 	}
 	
 	img[src$="back-red.png"] {
-		content: url(https://i.imgur.com/n7ZBXdp.png);
+		content: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/card_backgrounds/back-red-Maudado.png?raw=true);
+	}
+
+    img[src$="back-green.png"] {
+		content: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/card_backgrounds/back-green-Maudado.png?raw=true);
+	}
+
+    .cover-bg {
+		background-image: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/card_backgrounds/cover-bg-maudado.png?raw=true) !important;
 	}
 	
 	/* Card Avatars */
 	img:not([src$="back-white.png"]) + figure .card-character {
-		background-image: url(https://i.imgur.com/afyg20Q.png) !important;
+		background-image: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/characters/stacked_characters.png?raw=true) !important;
 		width: 310px !important;
 		height: 205px !important;
 		--tw-translate-x: -49%;
@@ -79,7 +87,7 @@
 	}
 	
 	img[src$="back-white.png"] + figure .card-character {
-		background-image: url(https://i.imgur.com/cKnrpTR.png) !important;
+		background-image: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/characters/stacked_characters_neutral.png?raw=true) !important;
 		width: 310px !important;
 		height: 205px !important;
 		--tw-translate-x: -50%;
@@ -104,10 +112,10 @@
 		height: 100%;
 		width: 100%;
 
-		background-image: url(https://i.imgur.com/JMu0VsP.jpeg);
+		background-image: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/page_background/Desktop%20-%20Extended_tiled.png?raw=true);
 		background-attachment: fixed;
 		background-repeat: repeat;
-		animation: diagonalScroll 60s infinite;
+		animation: diagonalScroll 135s infinite;
 		animation-direction: alternate;
 		animation-timing-function: linear;
 		background-size: 350% !important;
