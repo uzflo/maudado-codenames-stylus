@@ -4,4 +4,5 @@ The aim is to recreate the interface in [this Codenames video](https://www.youtu
 
 ## Sources
 - The background image is an edited version of the ["Schneckchen"-Wallpaper](https://imgur.com/a/t2dD8tw) by [@temellow](https://x.com/temellow) ([Reference](https://x.com/temellow/status/1464944571725623305)).
-- The character images are all edited versions from the [video](https://www.youtube.com/watch?v=UcVJ1PFNPC0) itself.
+- Most character images are all edited versions from the [video](https://www.youtube.com/watch?v=UcVJ1PFNPC0) itself (probably by [Sinold]https://www.youtube.com/@Snold/videos).
+- The cat character image is a recreation of the cate from the ["Schneckchen"-Wallpaper](https://imgur.com/a/t2dD8tw) by [@temellow](https://x.com/temellow)

@@ -94,6 +94,22 @@
 		--tw-translate-y: -51%;
 		border-radius: 20px;
 	}
+	
+	.cover-char:is(.jsx-2828423581 /*red-7*/, .jsx-2133672141 /*red-16*/) {
+		background: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/characters/red-0.png?raw=true) !important;
+	}
+
+	.cover-char:is(.jsx-3956690630 /*blue-10*/, .jsx-2133672141 /*red-16*/) {
+		background: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/characters/blue-0.png?raw=true) !important;
+	}
+
+	.cover-char:is(.jsx-2113982806 /*blue-1*/) {
+		background: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/characters/blue-1.png?raw=true) !important;
+	}
+	
+	img[src$="neutral-0.webp"], img[src$="neutral-1.webp"], img[src$="neutral-2.webp"], img[src$="neutral-3.webp"], img[src$="neutral-4.webp"], img[src$="neutral-5.webp"], img[src$="neutral-6.webp"], img[src$="neutral-7.webp"], img[src$="neutral-8.webp"], img[src$="neutral-9.webp"], img[src$="neutral-10.webp"] {
+		content: url(https://github.com/uzflo/maudado-codenames-stylus/blob/main/images/characters/neutral-0.png?raw=true) !important;
+	}
 }
 
 @-moz-document regexp(".*codenames.game/daily.*") {
@@ -125,25 +141,28 @@
 		display: none;
 	}
 
-    /* - If team red on the left side */
-	.w-\(--AppWidth\):has( section[data-match-column="left"] div[data-match-slot="redOp"]) > main div:nth-child(1)::after {
+	/* Color Overlay */
+	div.w-\(--AppWidth\) > main div:nth-child(1)::after {
 		content: '';
 		z-index: 10;
 		width: 100%;
 		height: 100%;
 		display: block;
 		position: absolute;
+	}
+	
+    /* - If team red on the left side */
+	div.w-\(--AppWidth\):has( section[data-match-column="left"] div[data-match-slot="redOp"]) > main div:nth-child(1)::after {
 		background: linear-gradient(90deg, rgba(255, 7, 35, .95) 0%, rgba(255, 7, 35, .95) 40%, rgba(0, 134, 224, .95) 60%, rgba(0, 134, 224, .95) 100%);
 	}
 
 	/* - If team blue on the left side */
-	.w-\(--AppWidth\):has(section[ data-match-column="left"] div[data-match-slot="blueOp"]) > main div:nth-child(1)::after {
-		content: '';
-		z-index: 10;
-		width: 100%;
-		height: 100%;
-		display: block;
-		position: absolute;
+	div.w-\(--AppWidth\):has(section[ data-match-column="left"] div[data-match-slot="blueOp"]) > main div:nth-child(1)::after {
 		background: linear-gradient(90deg, rgba(0, 134, 224, .95) 0%, rgba(0, 134, 224, .95) 40%, rgba(255, 7, 35, .95) 60%, rgba(255, 7, 35, .95) 100%);
+	}
+	
+	/* If no elements on left side (e.g. Reconnect) */
+	div.w-\(--AppWidth\):not(:has( section[data-match-column="left"])) > main div:nth-child(1)::after {
+		background: rgba(0, 134, 224, .75);
 	}
 }
